@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+
+
+	<servlet>
+		<servlet-name>leaveMessage</servlet-name>
+		<servlet-class>com.love.LeaveMessageServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>leaveMessage</servlet-name>
+		<url-pattern>/sendmessage</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>love</servlet-name>
+		<servlet-class>com.love.LoveServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>love</servlet-name>
+		<url-pattern>/love</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>you</servlet-name>
+		<servlet-class>com.love.YouServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>you</servlet-name>
+		<url-pattern>/you</url-pattern>
+	</servlet-mapping>
+	
+	
+	<!--日志记录访问ip的信息，同时采用缓存技术ehcache  -->
+	<filter>
+		<filter-name>log</filter-name>
+		<filter-class>com.love.FilterLog</filter-class>
+	</filter>
+	<filter-mapping>
+		<filter-name>log</filter-name>
+		<url-pattern>/love/index.jsp</url-pattern>
+	</filter-mapping>
+	
+	<listener>  
+   		<listener-class>com.love.Log4jListener</listener-class>  
+	</listener>  
+	
+	<!-- session失效时间：二小时 -->
+	<session-config>
+		<session-timeout>120</session-timeout>
+	</session-config>
+	<welcome-file-list>
+		<welcome-file>love/index.jsp</welcome-file>
+	</welcome-file-list>
+	
+	<error-page>
+    	<error-code>404</error-code>
+   		 <location>/404/lost.jsp</location>
+ 	 </error-page>
+</web-app>
+
