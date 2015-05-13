@@ -2,9 +2,9 @@
 Pre Loader
 ----------------------------- */
 $(window).load(function() {
-	//'use strict';
-	//$('.loading-icon').delay(500).fadeOut();
-	$('#preloader').fadeOut('fast');;
+	'use strict';
+	$('.loading-icon').delay(500).fadeOut();
+	$('#preloader').delay(800).fadeOut('slow');
 });
 
 
@@ -74,7 +74,7 @@ Card Style Script
 $(document).ready(function() {
 	'use strict';
 	var $el 			= $( '#card-ul' ),
-		sectionFeature  = $('#section-feature'),
+		sectionFeature  = $('#section-love'),
 		baraja 			= $el.baraja();
 	
 		if ( $(window).width() > 480) {

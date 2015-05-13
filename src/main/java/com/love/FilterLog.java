@@ -29,7 +29,7 @@ public class FilterLog extends SimplePageCachingFilter {
 			headers.put(name, headerValue);
 			logLine.append(": ").append(name).append(" -> ").append(headerValue);
 		}
-		log.info("【浏览者信息】" + logLine.toString());
+		log.info("【浏览者信息】" + logLine.toString() + "RemoteAddr->" + request.getRemoteAddr());
 	}
 	
 	@Override

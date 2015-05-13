@@ -10,20 +10,18 @@
 %>
 <html lang="en-US">
 	<head>
-		<base href="<%=basePath%>/love/">
 		<title>老婆生日快乐(づ￣3￣)づ╭❤～</title>
-		<meta http-equiv="pragma" content="no-cache">
-		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="cache-control" content="public">
 		<meta http-equiv="expires" content="0">
 		<meta http-equiv="keywords" content="张静月,高广金,ggjlovezjy">
 		<meta http-equiv="description" content="生日快乐">
 		
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<link rel="stylesheet" href="css/bootstrap.css" />
-		<link rel="stylesheet" href="css/font-awesome.min.css" />
-		<link rel="stylesheet" href="css/linea-icon.css" />
-		<link rel="stylesheet" href="css/fancy-buttons.css" />
+		<link rel="stylesheet" href="${path}/love/css/bootstrap.css" />
+		<link rel="stylesheet" href="${path}/love/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="${path}/love/css/linea-icon.css" />
+		<link rel="stylesheet" href="${path}/love/css/fancy-buttons.css" />
 		
 		<!--=== Google Fonts ===-->
 		<link href='http://fonts.googleapis.com/css?family=Bangers'
@@ -37,17 +35,19 @@
 			href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700'
 			rel='stylesheet' type='text/css'>
 		<!--=== Other CSS files ===-->
-		<link rel="stylesheet" href="css/animate.css" />
-		<link rel="stylesheet" href="css/jquery.vegas.css" />
-		<link rel="stylesheet" href="css/baraja.css" />
-		<link rel="stylesheet" href="css/jquery.bxslider.css" />
+		<link rel="stylesheet" href="${path}/love/css/animate.css" />
+		<link rel="stylesheet" href="${path}/love/css/jquery.vegas.css" />
+		<link rel="stylesheet" href="${path}/love/css/baraja.css" />
+		<link rel="stylesheet" href="${path}/love/css/jquery.bxslider.css" />
 		
 		<!--=== Main Stylesheets ===-->
-		<link rel="stylesheet" href="css/style.css" />
-		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="stylesheet" href="${path}/love/css/style.css" />
+		<link rel="stylesheet" href="${path}/love/css/responsive.css" />
+		<link rel="stylesheet" href="${path}/love/css/message.css" />
+	
 		
 		<!--=== Color Scheme, three colors are available red.css, orange.css and gray.css ===-->
-		<link rel="stylesheet" id="scheme-source" href="css/schemes/gray.css" />
+		<link rel="stylesheet" id="scheme-source" href="${path}/love/css/schemes/gray.css" />
 		
 		
 	</head>
@@ -75,7 +75,7 @@
 									class="icon-bar"></span>
 							</button>
 							<!--=== Site Name ===-->
-							<a class="site-name navbar-brand" href="#"><span>I</span>❤张静月</a>
+							<a class="site-name navbar-brand" href="${path}/"><span>I</span>❤张静月</a>
 						</div>
 
 						<!-- Main Navigation menu Starts -->
@@ -91,6 +91,7 @@
 								<li><a href="#section-video" id="closemusic">你猜</a></li>
 								<li><a href="#section-liwu">生日礼物</a></li>
 								<li><a href="#section-contact">留言</a></li>
+								<li><a href="#section-liuyan">留言墙</a></li>
 							</ul>
 						</div>
 						<!-- Main Navigation menu ends-->
@@ -348,9 +349,9 @@
 
 
 	<!--=== Testimonials section Starts ===-->
-	<section id="section-fendou" class="testimonials-wrap">
+	<section id="section-fendou">
 		<div class="section-overlay"></div>
-		<div class="container testimonials center animated"
+		<div class="container sep testimonials center animated"
 			data-animation="rollIn" data-animation-delay="500">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
@@ -633,33 +634,86 @@
 			</div>
 		</div>
 	</section>
-	<script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
-	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/bootstrapValidator.min.js"></script>
-	<script type="text/javascript" src="js/modernizr.js"></script>
-	<script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+	
+	<!--=== Pricing section Starts ===-->
+	<section id="section-liuyan" class="pricing-wrap">
+		<div class="container pricing">
+			<div class="row">
+				<div class="col-md-10 col-md-offset-1 center section-title">
+					<h3>留言墙</h3>
+				</div>
+				
+				<ul id="background">
+				<!-- 
+			  <li>
+			    <a href="">
+			      <h2>高广金</h2>
+			      <p>这是测算是水水水水上司说水水水水上司说水水水水</p>
+			    </a>
+			  </li>
+			  
+			   <li>
+			    <a href="">
+			      <h2>张静月</h2>
+			      <p>做的不错噢Text Content #1</p>
+			    </a>
+			  </li>
+			  
+			   <li>
+			    <a href="">
+			      <h2>Title #1</h2>
+			      <p>Text Content #1</p>
+			    </a>
+			  </li>
+			  
+			   <li>
+			    <a href="">
+			      <h2>Title #1</h2>
+			      <p>Text Content #1</p>
+			    </a>
+			  </li>
+		
+			  <li>
+			    <a href="">
+			      <h2>Title #8</h2>
+			      <p>Text Content #8</p>
+			    </a>
+			  </li>
+			   -->
+			</ul>
+			
+			</div>
+		</div>
+	</section>
+	
+	<script type="text/javascript" src="${path}/love/js/jquery-1.11.1.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/bootstrapValidator.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/modernizr.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.easing.1.3.js"></script>
 
 	<!--==== Slider and Card style plugin ====-->
-	<script type="text/javascript" src="js/jquery.baraja.js"></script>
-	<script type="text/javascript" src="js/jquery.vegas.min.js"></script>
-	<script type="text/javascript" src="js/jquery.bxslider.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.baraja.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.vegas.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.bxslider.min.js"></script>
 
 	<!--==== MailChimp Widget plugin ====-->
-	<script type="text/javascript" src="js/jquery.ajaxchimp.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.ajaxchimp.min.js"></script>
 
 	<!--==== Scroll and navigation plugins ====-->
-	<script type="text/javascript" src="js/jquery.nicescroll.min.js"></script>
-	<script type="text/javascript" src="js/jquery.nav.js"></script>
-	<script type="text/javascript" src="js/jquery.appear.js"></script>
-	<script type="text/javascript" src="js/jquery.fitvids.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.nicescroll.min.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.nav.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.appear.js"></script>
+	<script type="text/javascript" src="${path}/love/js/jquery.fitvids.js"></script>
 
 	<!--==== Custom Script files ====-->
-	<script type="text/javascript" src="js/custom.js"></script>
+	<script type="text/javascript" src="${path}/love/js/custom.js"></script>
 
 	<script type="text/javascript" defer async="async">
 		$(function() {
 			appendMusic();
-			appendLove(4);
+				appendLove(4);
+			
 			//关闭音乐事件
 			$("#closemusic").on("click", function() {
 				$("#music").remove();
@@ -673,6 +727,9 @@
 			$("#love").on("click", function() {
 				appendLove(400);
 			})
+			
+			// 显示留言板
+			displayMessage();
 		})
 		
 		function appendLove(sum){
@@ -696,32 +753,34 @@
 			if (ua.match(/msie ([\d.]+)/)) {
 				$('body')
 						.append(
-								'<object id="music" classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95"><param name="AutoStart" value="1" /><param name="Src" value="http://bcs.duapp.com/ggjlovezjy/love.mp3" /></object>');
+								'<object id="music" classid="clsid:22D6F312-B0F6-11D0-94AB-0080C74C7E95"><param name="AutoStart" value="1" /><param name="Src" value="${path}/love/music/love.mp3" /></object>');
 			} else if (ua.match(/firefox\/([\d.]+)/)) {
 				$('body')
 						.append(
-								'<embed id="music" src="http://bcs.duapp.com/ggjlovezjy/love.mp3" type="audio/mp3" hidden="true" loop="false" mastersound></embed>');
+								'<embed id="music" src="${path}/love/music/love.mp3" type="audio/mp3" hidden="true" loop="false" mastersound></embed>');
 			} else if (ua.match(/chrome\/([\d.]+)/)) {
 				$('body')
 						.append(
-								'<audio  id="music" src="http://bcs.duapp.com/ggjlovezjy/love.mp3" type="audio/mp3" autoplay=”autoplay” hidden="true"></audio>');
+								'<audio  id="music" src="${path}/love/music/love.mp3" type="audio/mp3" autoplay=”autoplay” hidden="true"></audio>');
 			} else if (ua.match(/opera.([\d.]+)/)) {
 				$('body')
 						.append(
-								'<embed id="music" src="http://bcs.duapp.com/ggjlovezjy/love.mp3" hidden="true" loop="false"><noembed><bgsounds src="/sounds/alert/1.mp3"></noembed>');
+								'<embed id="music" src="${path}/love/music/love.mp3" hidden="true" loop="false"><noembed></noembed>');
 			} else if (ua.match(/version\/([\d.]+).*safari/)) {
 				$('body')
 						.append(
-								'<audio id="music" src="http://bcs.duapp.com/ggjlovezjy/love.mp3" type="audio/mp3" autoplay="autoplay" hidden="true"></audio>');
+								'<audio id="music" src="${path}/love/music/love.mp3" type="audio/mp3" autoplay="autoplay" hidden="true"></audio>');
 			} else {
 				$('body')
 						.append(
-								'<embed music src="http://bcs.duapp.com/ggjlovezjy/love.mp3" type="audio/mp3" hidden="true" loop="false" mastersound></embed>');
+								'<embed music src="${path}/love/music/love.mp3" type="audio/mp3" hidden="true" loop="false" mastersound></embed>');
 			}
 		}
 		
 		function sendmessage(){
 			var dataParams="name="+$("#name").val()+"&"+"email="+$("#email").val()+"&"+"subject="+$("#subject").val()+"&"+"message="+$("#message").val();
+			$('#background').append("<li><a><h2>" + $("#name").val() + "</h2> <p>"
+					+ $("#message").val() + "</p></a> </li>");
 			$.ajax({
 				type: "post",//使用get方法访问后台
 				url: "${path}/sendmessage",//要访问的后台地址
@@ -735,6 +794,30 @@
 					}, 8000);
 				},
 				complete: function(){//AJAX请求完成时隐藏loading提示
+				}
+			})
+			
+		}
+		
+		
+		function displayMessage() {
+			$("#background").empty();
+			var html = "";
+			$.ajax({
+				type : "get",//使用get方法访问后台
+				url : "${path}/sendmessage",//要访问的后台地址
+				dataType : "json",
+				data: "date="+new Date(),
+				success : function(data) {//msg为返回的数据，在这里做数据绑定
+					$(data).each(
+							function(i, item) {
+								html += "<li><a><h2>" + item.name + "</h2> <p>"
+										+ item.message + "</p></a> </li>";
+							})
+
+					$('#background').append(html);
+				},
+				complete : function() {//AJAX请求完成时隐藏loading提示
 				}
 			})
 		}

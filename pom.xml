@@ -17,13 +17,21 @@
 			<artifactId>slf4j-log4j12</artifactId>
 			<version>1.7.2</version>
 		</dependency>
-		<!-- javaEEapi -->
+		<!-- javaEEapi 
 		<dependency>
 			<groupId>org.apache.openejb</groupId>
 			<artifactId>javaee-api</artifactId>
 			<version>6.0-1</version>
 			<scope>provided</scope>
 		</dependency>
+		-->
+		<!-- tomact6 依赖servlet-api 2.5-->
+		<dependency>
+			<groupId>javax.servlet</groupId>
+			<artifactId>servlet-api</artifactId>
+			<version>2.5</version>
+		</dependency>
+		
 		<!--lombok架包 -->
 		<dependency>
 			<groupId>org.projectlombok</groupId>
@@ -42,6 +50,18 @@
 			<groupId>net.sf.ehcache</groupId>
 			<artifactId>ehcache-web</artifactId>
 			<version>2.0.4</version>
+		</dependency>
+		<!-- io工具类 -->
+		<dependency>
+			<groupId>commons-io</groupId>
+			<artifactId>commons-io</artifactId>
+			<version>2.4</version>
+		</dependency>
+		<!-- fatjson -->
+		<dependency>
+			<groupId>com.alibaba</groupId>
+			<artifactId>fastjson</artifactId>
+			<version>1.1.31</version>
 		</dependency>
 	</dependencies>
 </project>
