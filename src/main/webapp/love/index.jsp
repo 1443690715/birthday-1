@@ -417,7 +417,7 @@
 							<h4 class="pricing-heading color-scheme">目前阶段</h4>
 							<div class="price">
 								<h3>
-									<span class="dollar">K</span> 8.2 <span class="month">/月</span>
+									<span class="dollar">K</span> 9.5 <span class="month">/月</span>
 								</h3>
 							</div>
 						</div>
@@ -443,7 +443,7 @@
 							<h4 class="pricing-heading color-scheme">下个阶段</h4>
 							<div class="price">
 								<h3>
-									<span class="dollar">K</span> 10 <span class="month">/month</span>
+									<span class="dollar">K</span> 13 <span class="month">/month</span>
 								</h3>
 							</div>
 						</div>
@@ -468,7 +468,7 @@
 							<h4 class="pricing-heading color-scheme">明年</h4>
 							<div class="price">
 								<h3>
-									<span class="dollar">K</span> 15 <span class="month">/月</span>
+									<span class="dollar">K</span> 16 <span class="month">/月</span>
 								</h3>
 							</div>
 						</div>
